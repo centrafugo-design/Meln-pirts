@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melnā pirts</title>
+  <meta name="description" content="Auksti kūpināti gaļas produkti pēc senām tradīcijām. Melnā pirts.">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, serif;
+      background-color: #1c1c1c;
+      color: #e6e6e6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      max-width: 520px;
+      padding: 40px;
+      border-radius: 15px;
+      background: linear-gradient(145deg, #2a2a2a, #1c1c1c);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      text-align: center;
+      animation: fadeIn 1s ease-out;
+    }
+
+    /* LOGO */
+    .logo {
+      width: 120px;
+      margin-bottom: 25px;
+      filter:
+        drop-shadow(0 0 6px rgba(201,162,77,0.35))
+        drop-shadow(0 0 14px rgba(0,0,0,0.6));
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-weight: normal;
+      letter-spacing: 3px;
+      color: #c9a24d;
+      font-size: 2.5em;
+      animation: slideDown 1s ease-out;
+    }
+
+    p {
+      line-height: 1.7;
+      margin: 18px 0;
+      opacity: 0;
+      animation: fadeInText 1s ease-out forwards;
+      animation-delay: 1s;
+    }
+
+    .contact {
+      margin-top: 30px;
+      font-size: 1em;
+      line-height: 1.8;
+      opacity: 0;
+      animation: fadeInText 1s ease-out forwards;
+      animation-delay: 1.5s;
+    }
+
+    .contact a {
+      color: #c9a24d;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact a:hover {
+      color: #ffcc66;
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 35px;
+      font-size: 0.8em;
+      color: #aaa;
+      opacity: 0;
+      animation: fadeInText 1s ease-out forwards;
+      animation-delay: 2s;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 25px;
+        margin: 15px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      .logo {
+        width: 90px;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <!-- LOGO -->
+    <a href="/">
+      <img src="logo.png" alt="Melnā pirts logo" class="logo">
+    </a>
+
+    <h1>MELNĀ PIRTS</h1>
+
+    <p>
+      Auksti kūpinātu gaļas produktu zīmols, balstīts senajās kūpināšanas
+      tradīcijās Latvijā un ārpus tās.
+    </p>
+
+    <p>
+      Gaļa tiek kūpināta lēni, zemā temperatūrā, izmantojot rūpīgi
+      piemeklētu malku un laiku kā galveno sastāvdaļu. Bez steigas,
+      bez liekām piedevām – tikai garša, ko veido dūmi, pieredze
+      un cieņa pret amatu.
+    </p>
+
+    <p>
+      Katrs izstrādājums top ierobežotā daudzumā, saglabājot
+      autentisku raksturu un kvalitāti.
+    </p>
+
+    <div class="contact">
+      📞 <a href="tel:+37126987327">+371 26987327</a><br>
+      🌐 <a href="https://www.facebook.com/kupinatavas.kupinajumi" target="_blank">Facebook</a>
+    </div>
+
+    <footer>
+      © 2026 melnapirts.lv
+    </footer>
+
+  </div>
+
+</body>
+</html>
